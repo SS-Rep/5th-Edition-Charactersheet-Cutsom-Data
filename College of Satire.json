@@ -1,0 +1,36 @@
+{
+  "backgrounds": [],
+  "races": [],
+  "subraces": [],
+  "classes": [],
+  "archetypes": [
+    {
+      "name": "College of Satire",
+      "class": "Bard",
+      "level": {
+        "3": [
+          {
+            "featuretext": "Bonus Proficiencies\nWhen you join the College of Satire at 3rd level, you gain proficiency with thieves’ tools. You also gain proficiency in Sleight of Hand and one additional skill of your choice. If you are already proficient with thieves’ tools or in Sleight of Hand, choose another skill proficiency for each proficiency you already have."
+          }
+		  {
+			"featuretext": "Tumbling Fool\nAt 3rd level, you master a variety of acrobatic techniques that allow you to evade danger. As a bonus action, you can tumble. When you tumble, you gain the following benefits for the rest of your turn:\nYou gain the benefits of taking the Dash and Disengage actions.\nYou gain a climbing speed equal to your current speed.\nYou take half damage from falling."
+		  }
+        ],
+        "6": [
+          {
+            "featuretext": "Fool's Insight\nAt 6th level, your ability to gather stories and lore gains a supernatural edge. You can cast Detect Thoughts up to a number of times equal to your Charisma modifier. You regain any expended uses of this ability after completing a long rest.\nIf a creature resists your attempt to probe deeper and succeeds at its saving throw against your Detect Thoughts, it immediately suffers an embarrassing social gaffe. It might loudly pass gas, unleash a thunderous burp, trip and fall, or be compelled to tell a tasteless joke."
+          }
+        ],
+        "14": [
+          {
+            "featuretext": "Fool's Luck\nJesters seem to have a knack for pulling themselves out of tight situations, transforming what looks like sure failure into an embarrassing but effective success.\nAt 14th level, you can expend one use of Bardic Inspiration after you fail an ability check, fail a saving throw, or miss with an attack roll. Roll a Bardic Inspiration die and add the number rolled to your attack, saving throw, or ability check, using the new result in place of the failed one.\nIf using this ability grants you a success on the attack, saving throw, or ability check, note the number you rolled on the Bardic Inspiration die. The DM can then apply that result as a penalty to an attack or check you make, and you cannot use this ability again until you suffer this drawback. When the DM invokes this penalty, describe an embarrassing gaffe or mistake you make as part of the affected die roll."
+          }
+        ]
+      }
+    }
+  ],
+  "sharedclassfeatures": [],
+  "sharedclassfeaturemenus": [],
+  "feats": [],
+  "weapons": []
+}

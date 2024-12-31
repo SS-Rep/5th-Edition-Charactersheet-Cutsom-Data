@@ -1,0 +1,262 @@
+{
+  "backgrounds": [],
+  "races": [],
+  "subraces": [],
+  "classes": [],
+  "archetypes": [
+    {
+      "name": "Theurgy Wizard",
+      "displayname": "Theurgy",
+      "class": "Wizard",
+      "previewtext": "Wizards who have merged their arcane study with religious devotion.",
+      "level": {
+        "2": [
+          {
+            "menu": {
+              "name": "Divine Inspiration",
+              "title": "Divine Inspiration",
+              "selections": "1",
+              "advancedfeaturetext": {
+                "prefixwithentryname": "true",
+                "prefixseperator": ":"
+              },
+              "entries": [
+                {
+                  "name": "Knowledge",
+                  "displayname": "Knowledge",
+                  "effects": [
+                    {
+                      "addclassfeatureflag": "Knowledge"
+                    }
+                  ]
+                },
+                {
+                  "name": "Life",
+                  "displayname": "Life",
+                  "effects": [
+                    {
+                      "addclassfeatureflag": "Life"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "featuretextwithbullet": "Arcane Initiate: Beginning at this level, whenever you gain a wizard level, you can replace adding a wizard spell to your spellbook with a cleric domain spell of your chosen domain. \nIf you have added all of the domain spells from your domain to your spellbook, you can choose to add any cleric spell to your spellbook instead.\nThese spells count as wizard spells for you. Other wizards cannot copy them out of your spellbook."
+          },
+          {
+            "featuretextwithbullet": "Channel Arcana: Once per short rest, you may use your Channel Arcana power to activate 1 of 2 effects: Divine Arcana and [DOMAIN DIVINITY]"
+          },
+          {
+            "ifthenelse": {
+              "if": [
+                {
+                  "classfeature": {
+                    "name": "Life",
+                    "class": ""
+                  }
+                }
+              ],
+              "then": [
+                {
+                  "replacestringfromfeaturetext": {
+                    "replacementtext": "Preserve Life",
+                    "find": "[DOMAIN DIVINITY]"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "featuretext": "\t\t-Divine Arcana: As a bonus action, cause the next spell you cast to gain +2 to any attack roll you make for it, or to its saving throw DC."
+          },
+          {
+            "ifthenelse": {
+              "if": [
+                {
+                  "classfeature": {
+                    "name": "Life",
+                    "class": ""
+                  }
+                }
+              ],
+              "then": [
+                {
+                  "featuretext": "  \\t\\t-Preserve Life: As an action, restore hit points equal to your Wizard level x 5, divided up amongst any amount of creatures within 30 ft. This feature cannot bring a target back up to above half of their hit point maximum."
+                }
+              ]
+            }
+          },
+          {
+            "setresource": {
+              "name": "Channel Arcana",
+              "amount": "1",
+              "displayname": "Channel Arcana",
+              "reset": "shortrest"
+            }
+          },
+          {
+            "showresource": "Channel Arcana"
+          }
+        ],
+        "6": [
+          {
+            "ifthenelse": {
+              "if": [
+                {
+                  "classfeature": {
+                    "name": "Life",
+                    "class": ""
+                  }
+                }
+              ],
+              "then": [
+                {
+                  "featuretextwithbullet": "Arcane Acolyte (Life): Whenever you use a spell of 1st level or higher to restore hit points to a creature, that creature regains an additional 2 + the spell's level."
+                }
+              ]
+            }
+          }
+        ],
+        "10": [
+          {
+            "ifthenelse": {
+              "if": [
+                {
+                  "classfeature": {
+                    "name": "Life",
+                    "class": ""
+                  }
+                }
+              ],
+              "then": [
+                {
+                  "featuretextwithbullet": "Arcane Priest(Life): Whenever you cast a spell of 1st level or higher that restores HP to a creature, you retain HP equal to 2 + the spell's level."
+                }
+              ]
+            }
+          }
+        ],
+        "14": [
+          {
+            "ifthenelse": {
+              "if": [
+                {
+                  "classfeature": {
+                    "name": "Life",
+                    "class": ""
+                  }
+                }
+              ],
+              "then": [
+                {
+                  "featuretextwithbullet": "Arcane High Priest(Life): Whenever you would roll dice to restore HP with a spell, you instead use the maximum possible amount for each die."
+                }
+              ]
+            }
+          }
+        ],
+        "all": [
+          {
+            "sharedclassfeature": {
+              "name": "Life Domain"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "sharedclassfeatures": [
+    {
+      "name": "Life Domain",
+      "effects": [
+        {
+          "ifthenelse": {
+            "if": [
+              {
+                "equal": {
+                  "first": {
+                    "classlevel": "Wizard"
+                  },
+                  "second": "2"
+                }
+              }
+            ],
+            "then": [
+              {
+                "replacestringfromfeaturetext": {
+                  "replacementtext": "Preserve Life",
+                  "find": "[DOMAIN DIVINITY]"
+                }
+              },
+              {
+                "featuretext": "\t\t-Preserve Life: As an action, restore hit points equal to your Wizard level x 5, divided up amongst any amount of creatures within 30 ft. This feature cannot bring a target back up to above half of their hit point maximum."
+              }
+            ]
+          }
+        },
+        {
+          "ifthenelse": {
+            "if": [
+              {
+                "equal": {
+                  "first": {
+                    "classlevel": "Wizard"
+                  },
+                  "second": "6"
+                }
+              }
+            ],
+            "then": [
+              {
+                "featuretextwithbullet": "Arcane Acolyte (Life): Whenever you use a spell of 1st level or higher to restore hit points to a creature, that creature regains an additional 2 + the spell's level."
+              }
+            ]
+          }
+        },
+        {
+          "ifthenelse": {
+            "if": [
+              {
+                "equal": {
+                  "first": {
+                    "classlevel": "Wizard"
+                  },
+                  "second": "10"
+                }
+              }
+            ],
+            "then": [
+              {
+                "featuretextwithbullet": "Arcane Priest(Life): Whenever you cast a spell of 1st level or higher that restores HP to a creature, you retain HP equal to 2 + the spell's level."
+              }
+            ]
+          }
+        },
+        {
+          "ifthenelse": {
+            "if": [
+              {
+                "equal": {
+                  "first": {
+                    "classlevel": "Wizard"
+                  },
+                  "second": "14"
+                }
+              }
+            ],
+            "then": [
+              {
+                "featuretextwithbullet": "Arcane High Priest(Life): Whenever you would roll dice to restore HP with a spell, you instead use the maximum possible amount for each die."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sharedclassfeaturemenus": [],
+  "feats": [],
+  "weapons": []
+}

@@ -1,0 +1,41 @@
+{
+  "backgrounds": [],
+  "races": [],
+  "subraces": [],
+  "classes": [],
+  "archetypes": [
+    {
+      "name": "Firecracker",
+      "class": "Rogue",
+      "level": {
+        "3": [
+          {
+            "featuretext": "Demolitionist\nAt 3rd level, you learn how to create small explosives and employ them in combat. you gain proficiency in Alchemist's Supplies and using these tools you can make Black Powder Bombs.At the end of each long rest, so long as you have access to your alchemist's supplies, you produce a number of Black Powder Bombs equal to your Intelligence modifier + your proficiency bonus. These Bombs become inert if not used by the end of your next rest.\nYou are proficient Black Powder Bombs and require a ranged weapon attack roll to use creating a loud localized shockwave dealing 1d6 bludgeoning damage, dealing double damage to structures. These bombs can trigger your Sneak Attack feature and always apply sneak attack damage against structures."
+          },
+          {
+            "featuretext": "Explosive Escape\nAlso, at 3rd level, when a creature hits you with a melee weapon attack you can, as a reaction, detonate a Black Powder Bomb that you have on you. That creature must make a Dexterity saving throw against your Firecracker Save DC. On a failed save, you and the creature are pushed 10 feet apart and that creature's movement speed is reduced to 0 until the end of its turn.\nFirecracker Save DC = 8 + your proficiency bonus + your Intelligence modifier"
+          }
+        ],
+        "9": [
+          {
+            "featuretext": "Remote Trigger\nAt 9th level, you have developed a remote that allows to trigger your Black Powder Bombs from a great distance. As an action, you can trigger a Black Powder Bomb as long as you are within 100 feet of it. Your Bombs have been upgraded now when you use your Black Powder Bombs creatures within 10 ft. of the bomb must make a Dexterity saving throw. On a failed save, each creature takes 2d6 bludgeoning damage or half as much on a successful save."
+          }
+        ],
+        "13": [
+          {
+            "featuretext": "Explosive Surprise\nStarting at 13th level, you have mastered the techniques to conceal and trigger explosions to exploit your foes weaknesses. Creatures have disadvantage on saving throws against your Bombs if they are surprised or cannot see the bomb."
+          }
+        ],
+        "17": [
+          {
+            "featuretext": "Pyrotechnician\nAt 17th level, you have become a savant at creating and deploying Black Powder Bombs. Your Black Powder Bombs now deal 3d6 bludgeoning damage. You can restock your Black Powder Bombs during a short rest but must complete a long rest before using this feature again.\nAdditionally, when you are reduced to 0 hit points you can, as a reaction, cause all the Black Powder Bombs you have on you to detonate at once. Creatures within 10 feet of you must make a Dexterity saving throw or take 1d6 per bomb detonated bludgeoning damage or half as much on a successful save. You take no damage from this explosion."
+          }
+        ]
+      }
+    }
+  ],
+  "sharedclassfeatures": [],
+  "sharedclassfeaturemenus": [],
+  "feats": [],
+  "weapons": []
+}

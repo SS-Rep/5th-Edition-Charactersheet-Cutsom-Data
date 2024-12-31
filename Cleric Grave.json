@@ -1,0 +1,150 @@
+{
+  "backgrounds": [],
+  "races": [],
+  "subraces": [],
+  "classes": [],
+  "archetypes": [
+    {
+      "name": "Grave Cleric",
+      "displayname": "Grave",
+      "class": "Cleric",
+      "previewtext": "Bonus Spells: Bane, False Life. \nHeavy Armor Proficiency. Max Healing to Unconscious Targets. Spare the Dying as Bonus Action. ",
+      "level": {
+        "1": [
+          {
+            "addspell": {
+              "name": "Bane",
+              "spelllevel": "1"
+            }
+          },
+          {
+            "addspell": {
+              "name": "Flase Life",
+              "spelllevel": "1"
+            }
+          },
+          {
+            "featuretextwithbullet": "Cleric Archetype: Grave"
+          },
+          {
+            "featuretextwithbullet": "New Forge Domain spells, Bane and False Life, added to app spell list."
+          },
+          {
+            "featuretextwithbullet": "Circle of Mortality: When you cast a spell that restores hit points to a living creature at 0hp, treat any dice rolled to determine the healing as its maximum value. \nAdditionally, if you know the Spare the Dying cantrip, you may cast it as a bonus action."
+          },
+          {
+            "featuretextwithbullet": "Eyes of the Grave: Once per long rest, you may spend 1 minute of uninterrupted concentration to determine the presence and nature of undead within a 1 mile radius. You learn their number, distance, and direction. You also learn the type of the strongest creature."
+          },
+          {
+            "addarmorproficiencies": [
+              "Heavy Armor"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "featuretextwithbullet": "Channel Divinity - Path of the Grave: As an action, you can spend one use of your Channel Divinity feature to touch a creature. The next time that creature is damaged by a spell or attack from you or an ally, the creature is vulnerable to that damage type.\nIf the creature is resistant or immune to the damage type, it instead loses the resistance or immunity."
+          }
+        ],
+        "3": [
+          {
+            "featuretextwithbullet": "New Grave Domain spells, Gentle Repose and Ray of Enfeeblement, added to app spell list."
+          },
+          {
+            "addspell": {
+              "name": "Gentle Repose",
+              "spelllevel": "2"
+            }
+          },
+          {
+            "addspell": {
+              "name": "Ray of Enfeeblement",
+              "spelllevel": "2"
+            }
+          }
+        ],
+        "5": [
+          {
+            "featuretextwithbullet": "New Grave Domain spells, Revivify and Vampiric Touch, added to app spell list."
+          },
+          {
+            "addspell": {
+              "name": "Revivify",
+              "spelllevel": "3"
+            }
+          },
+          {
+            "addspell": {
+              "name": "Vampiric Touch",
+              "spelllevel": "3"
+            }
+          }
+        ],
+        "6": [
+          {
+            "featuretextwithbullet": "Sentinel at Death's Door: Once per short or long rest, as a reaction, when you or an ally within 30ft. of you is hit by a critical hit, you can turn that attack in to a normal hit. Any special effects from a critical are also nullified."
+          }
+        ],
+        "7": [
+          {
+            "featuretextwithbullet": "New Grave Domain spells, Blight and Death Ward, added to app spell list."
+          },
+          {
+            "addspell": {
+              "name": "Blight",
+              "spelllevel": "4"
+            }
+          },
+          {
+            "addspell": {
+              "name": "Death Ward",
+              "spelllevel": "4"
+            }
+          }
+        ],
+        "8": [
+          {
+            "featuretextwithbullet": "Divine Strike: Once per turn when you hit a creature with a weapon attack, you can deal an extra 1d8 necrotic damage. "
+          }
+        ],
+        "9": [
+          {
+            "featuretextwithbullet": "New Grave Domain spells, Antilife Shell and Raise Dead, added to app spell list."
+          },
+          {
+            "addspell": {
+              "name": "Antilife Shell",
+              "spelllevel": "5"
+            }
+          },
+          {
+            "addspell": {
+              "name": "Raise Dead",
+              "spelllevel": "5"
+            }
+          }
+        ],
+        "14": [
+          {
+            "replacestringfromfeaturetext": {
+              "replacementtext": "Divine Strike: Once per turn when you hit a creature with a weapon attack, you can deal an extra 2d8 necrotic damage. ",
+              "find": "Divine Strike: Once per turn when you hit a creature with a weapon attack, you can deal an extra 1d8 necrotic damage. "
+            }
+          },
+          {
+            "featuretextwithbullet": "Divine Strike damage increase."
+          }
+        ],
+        "17": [
+          {
+            "featuretextwithbullet": "Keeper of Souls: When an enemy you can see within 30ft dies, you or one ally of your choice within 30ft of you may gain hit points equal to the enemy's number of hit dice. You may use this feature no more than once per round, and you must not be incapacitated."
+          }
+        ]
+      }
+    }
+  ],
+  "sharedclassfeatures": [],
+  "sharedclassfeaturemenus": [],
+  "feats": [],
+  "weapons": []
+}

@@ -1,0 +1,522 @@
+{
+  "backgrounds": [],
+  "races": [],
+  "subraces": [],
+  "classes": [],
+  "archetypes": [
+    {
+      "name": "Four Elements Remastered",
+      "displayname": "Four Elements Remastered",
+      "class": "Monk",
+      "previewtext": "Control the elements",
+      "spellcastingability": "wisdom",
+      "level": {
+        "3": [
+          {
+            "sharedclassfeaturemenu": {
+              "name": "Initiate of the Way",
+              "selections": "2",
+              "class": "Monk"
+            }
+          },
+          {
+            "featuretextwithbullet": "Initiate of the Way: You learned 2 elemental cantrips of your choice. "
+          },
+          {
+            "featuretextwithbullet": "Disciple of the Elements: You learn 2 Elemental Disciplines. Some disciplines allow you to cast spells, you do not need any material components to cast these. Additionally, once you are level 5, you may raise the level of the spell casting by 1 level per extra ki point spent. "
+          },
+          {
+            "sharedclassfeaturemenu": {
+              "name": "Disciplines Remastered",
+              "selections": "2",
+              "class": "Monk"
+            }
+          }
+        ],
+        "6": [
+          {
+            "sharedclassfeaturemenu": {
+              "name": "Disciplines Remastered",
+              "selections": "2",
+              "replace": "1",
+              "class": "Monk"
+            }
+          }
+        ],
+        "11": [
+          {
+            "sharedclassfeaturemenu": {
+              "name": "Disciplines Remastered",
+              "selections": "2",
+              "replace": "1",
+              "class": "Monk"
+            }
+          }
+        ],
+        "17": [
+          {
+            "sharedclassfeaturemenu": {
+              "name": "Disciplines Remastered",
+              "selections": "2",
+              "replace": "1",
+              "class": "Monk"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "sharedclassfeatures": [],
+  "sharedclassfeaturemenus": [
+    {
+      "name": "Initiate of the Way",
+      "title": "Initiate of the Way",
+      "selections": "2",
+      "hidepreviewtext": "true",
+      "entries": [
+        {
+          "name": "Control Flames",
+          "displayname": "Control Flames",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Control Flames",
+                "spelllevel": "0"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Mold Earth ",
+          "displayname": "Mold Earth",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Mold Earth",
+                "spelllevel": "0"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Gust",
+          "displayname": "Gust",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Gust",
+                "spelllevel": "0"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Shape Water",
+          "displayname": "Shape Water",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Shape Water",
+                "spelllevel": "0"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disciplines Remastered",
+      "title": "Elemental Disciplines",
+      "selections": "2",
+      "replace": "1",
+      "advancedfeaturetext": {
+        "useentrypreviewtext": "true",
+        "usebullet": "true",
+        "prefixwithentryname": "true",
+        "prefixseperator": ":",
+        "removefeaturetextifreplaced": "true"
+      },
+      "entries": [
+        {
+          "name": "Become the Teapot",
+          "displayname": "Become the Teapot",
+          "previewtext": "Use 1 ki point to cast Absorb Elements",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Absorb Elements",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Effortless Step",
+          "displayname": "Effortless Step",
+          "previewtext": "Your jump height and distance are doubled (quadrupled with step of the wind), and you have advantage on Athletics jumping checks"
+        },
+        {
+          "name": "Enduring Mountain Stance",
+          "displayname": "Enduring Mountain Stance",
+          "previewtext": "When you use the Dodge action, you cannot be moved, pushed, grappled, frightened, or knocked prone against your will until the start of your next turn."
+        },
+        {
+          "name": "Fangs of the Fire Snake",
+          "displayname": "Fangs of the Fire Snake",
+          "previewtext": "When you make an unarmed attack, you reach increases by 5 ft and the attack deals fire damage. If the attack hits, you can spend 1 ki point to deal 1d10 extra fire damage."
+        },
+        {
+          "name": "Fangs of the Frost Wolf",
+          "displayname": "Fangs of the Frost Wolf",
+          "previewtext": "You can spend 1 ki point to cast Ice Knife",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Ice Knife",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Fist of Four Thunders",
+          "displayname": "Fist of Four Thunders",
+          "previewtext": "You can spend 1 ki point to cast Thunderwave",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Thunderwave",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Fist of Unbroken Air",
+          "displayname": "Fist of Unbroken Air",
+          "previewtext": "When you make an unarmed attack, you reach increases by 10 ft. If the attack hits, you can spend 1 ki point to force the target to make a Str save, or be pushed back 10 ft and get knocked prone."
+        },
+        {
+          "name": "Golden Snake's Icy Path",
+          "displayname": "Golden Snake's Icy Path",
+          "previewtext": "Whenever you take the Dash action, until the end of your turn, any movement you make leaves a trail of slipper ice. This ice is difficult terrain."
+        },
+        {
+          "name": "Rumbling Badger",
+          "displayname": "Rumbling Badger",
+          "previewtext": "You can spend 1 ki point to cast Earth Tremor",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Earth Tremor",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Rush of the Gale Spirits",
+          "displayname": "Rush of the Gale Spirits",
+          "previewtext": "You can spend 2 ki points to cast Gust of Wind",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Gust of Wind",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Shape the Raincloud",
+          "displayname": "Shape the Raincloud",
+          "previewtext": "You can spend 1 ki points to cast Create or Destroy Water",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Create or Destroy Water",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sweeping Cinder Strike",
+          "displayname": "Sweeping Cinder Strike",
+          "previewtext": "You can spend 1 ki points to cast Burning Hands",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Burning Hands",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Water Whip",
+          "displayname": "Water Whip",
+          "previewtext": "You can spend 1 ki point as a bonus action to force another creature to make a Dex saving throw. If it fails, the creature is either knocked prone, or pulled 25ft closer to you, and takes damage equal to your martial arts die + Wis. You may increase this damage by 1d10 per extra ki point you spend. If it passes, it takes half damage and doesn't move."
+        },
+        {
+          "name": "A Leaf on the Wind",
+          "displayname": "A Leaf on the Wind",
+          "previewtext": "Your Slow Fall ability no longer requires a reaction, and reduces all fall damage to 0. You can now also glide horizontally while you fall. ",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Burning Ember Flourish",
+          "displayname": "Burning Ember Flourish",
+          "previewtext": "You can spend 2 ki points to cast Pyrotechnics",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Pyrotechnics",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Crushing Hand of the Mountain",
+          "displayname": "Crushing Hand of the Mountain",
+          "previewtext": "You can spend 2 ki points to cast Maximillian's Earthen Grasp",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Maximillian's Earthen Grasp",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Curtain of Unyielding Wind",
+          "displayname": "Curtain of Unyielding Wind",
+          "previewtext": "You can spend 2 ki points to cast Warding Wind",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Warding Wind",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Gong of the Summit",
+          "displayname": "Gong of the Summit",
+          "previewtext": "You can spend 2 ki points to cast Shatter",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Shatter",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Hatchling's Flame",
+          "displayname": "Hatchling's Flame",
+          "previewtext": "You can spend 2 ki points to cast Aganazzar's Scorcher",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Aganazzar's Scorcher",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Impenetrable Iron Tortoise SHell",
+          "displayname": "Impenetrable Iron Tortoise SHell",
+          "previewtext": "As a reaction, you may spend 2 ki points to use your Deflect Missiles ability against an attack you can see within 30 ft of you. If you reduce this attack to 0 damage, you may not attack back with it.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Mote of the Sun",
+          "displayname": "Mote of the Sun",
+          "previewtext": "You can spend 2 ki points to cast Flaming Sphere",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Flaming Sphere",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Patient Badger Listens",
+          "displayname": "Patient Badger Listens",
+          "previewtext": "You can spend 2 ki points as a bonus action to gain tremorsense with a 30 ft range, and a burrow speed equal to half of your walking speed for 1 minute. Your movement creates a tunnel behind you that collapses when this ability ends. ",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Red Dragon's Claws",
+          "displayname": "Red Dragon's Claws",
+          "previewtext": "You can spend 2 ki points to cast Scorching Ray",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Scorching ray",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Swarming Ice rabbit",
+          "displayname": "Swarming Ice Rabbit",
+          "previewtext": "You can spend 2 ki points to cast Snilloc's Snowball Storm",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Snilloc's Snowball Storm",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Water Jet",
+          "displayname": "Water Jet",
+          "previewtext": "You can spend 2 ki points as an action to send out a jet of water in a 30 by 5 ft line. Each creature in the line must make a Str save, taking damage equal to your Martial Arts die + Wis on a failed save, or half on a pass. Additionally, you can move each target that failed its save to any space on the line. ",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Monk"
+                },
+                "second": "6"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        }
+      ]
+    }
+  ],
+  "feats": [],
+  "weapons": []
+}

@@ -1,0 +1,1132 @@
+{
+  "backgrounds": [],
+  "races": [],
+  "subraces": [],
+  "classes": [],
+  "archetypes": [
+    {
+      "name": "The Hexblade",
+      "displayname": "Hexblade",
+      "class": "Warlock",
+      "previewtext": "Gain access to combat spells.\nUse Cha to attack, curse targets, and summon a Shadow Hound.",
+      "level": {
+        "1": [
+          {
+            "addarmorproficiencies": [
+              "Medium Armor",
+              "Shield"
+            ]
+          },
+          {
+            "addweaponproficiencies": [
+              "Martial Weapons"
+            ]
+          },
+          {
+            "featuretextwithbullet": "Warlock Archetype: Hexblade"
+          },
+          {
+            "featuretextwithbullet": "Expanded Spell List: You may select Shield and Wrathful Smite as Warlock spells."
+          },
+          {
+            "featuretextwithbullet": "Hex Warrior - When you attack with a wepaon you are proficient with, and is not two-handed, you may use your Cha mod for the attack and damage instead of Str or Dex."
+          },
+          {
+            "featuretextwithbullet": "Hexblade's Curse - Once per short or long rest, you can choose one creature you can see within 30 feet of you as a bonus action. The target is cursed for 1 minute. Until the curse ends, you gain the following benefits:"
+          },
+          {
+            "featuretext": {
+              "combinestrings": [
+                "-Bonus to damage rolls against the target equal to: ",
+                {
+                  "value": "proficiencybonus"
+                },
+                " (proficiency bonus)."
+              ]
+            }
+          },
+          {
+            "featuretext": "-Attacks you make against the target are critical hits on 19 or 20."
+          },
+          {
+            "featuretext": {
+              "combinestrings": [
+                "-If the target dies while cursed, you regain ",
+                {
+                  "value": {
+                    "add": [
+                      "charismamodifier",
+                      {
+                        "classlevel": "Warlock"
+                      }
+                    ]
+                  }
+                },
+                " (Cha mod + level) hit points."
+              ]
+            }
+          }
+        ],
+        "3": [
+          {
+            "featuretextwithbullet": "Expanded Spell List: You may select Branding Smite and Magic Weapon as Warlock spells."
+          }
+        ],
+        "5": [
+          {
+            "featuretextwithbullet": "Expanded Spell List: You may select Blink and Elemental Weapon as Warlock spells."
+          }
+        ],
+        "6": [
+          {
+            "featuretextwithbullet": "Shadow Hound - As a bonus action, command your shadow to attach to a creature you can see within 60 ft of you. While affected, the target gains no benefit from cover (other than full) against your attacks. You also know the distance and direction to the target. Your Hound cannot be seen by anyone but you and Truesight."
+          },
+          {
+            "featuretext": "You can recall the Hound with a bonus action. It also returns if you are incapacitated, or it is affected by: Dispel Magic, Remove Curse, or a similar effect."
+          }
+        ],
+        "7": [
+          {
+            "featuretextwithbullet": "Expanded Spell List: You may select Phantasmal Killer and Staggering Smite as Warlock spells."
+          }
+        ],
+        "9": [
+          {
+            "featuretextwithbullet": "Expanded Spell List: You may select Cone of Cold and Destructive Wave as Warlock spells."
+          }
+        ],
+        "10": [
+          {
+            "featuretextwithbullet": "Armor of Hexes - If your cursed target hits you with an attack roll, roll a d6. On a 4 or higher, the attack misses."
+          }
+        ],
+        "14": [
+          {
+            "featuretextwithbullet": "Master of Hexes - You may use your Hexblade Curse again without resting. Cursing a new target ends the curse on a previous."
+          }
+        ],
+        "all": [
+          {
+            "replacelinefromfeaturetext": {
+              "lineends": "hit points.",
+              "replacementtext": {
+                "combinestrings": [
+                  "If the target dies while cursed, you regain ",
+                  {
+                    "value": {
+                      "add": [
+                        "charismamodifier",
+                        {
+                          "classlevel": "Warlock"
+                        }
+                      ]
+                    }
+                  },
+                  " (Cha mod + level) hit points."
+                ]
+              },
+              "linestarts": "If the target dies"
+            }
+          },
+          {
+            "replacelinefromfeaturetext": {
+              "lineends": "(proficiency bonus).",
+              "replacementtext": {
+                "combinestrings": [
+                  "Bonus to damage rolls against the target equal to ",
+                  {
+                    "value": "proficiencybonus"
+                  },
+                  " (proficiency bonus)."
+                ]
+              },
+              "linestarts": "Bonus to damage rolls"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "sharedclassfeatures": [],
+  "sharedclassfeaturemenus": [
+    {
+      "name": "Eldritch Invocations",
+      "title": "Choose Invocations",
+      "selections": "2",
+      "advancedfeaturetext": {
+        "useentrypreviewtext": "true",
+        "usebullet": "true",
+        "prefixwithentryname": "true",
+        "prefixseperator": "- ",
+        "removefeaturetextifreplaced": "true"
+      },
+      "entries": [
+        {
+          "name": "Agonizing Blast",
+          "displayname": "Agonizing Blast",
+          "previewtext": "When you cast Eldritch Blast, add your Charisma modifier on hit."
+        },
+        {
+          "name": "Armor of Shadows",
+          "displayname": "Armor of Shadows",
+          "previewtext": "You can cast Mage Armor at will.",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Mage Armor",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ascendant Step",
+          "displayname": "Ascendant Step",
+          "previewtext": " You can cast Levitate on yourself at will.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "9"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Levitate",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Beast Speech",
+          "displayname": "Beast Speech",
+          "previewtext": "You can cast Speak With Animals at will.",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Speak With Animals",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Beguiling Influence",
+          "displayname": "Beguiling Influence",
+          "previewtext": "You gain proficiency in Deception and Persuasion. (If you already were, go pick another skill",
+          "effects": [
+            {
+              "setskillproficiency": {
+                "deception": "true"
+              }
+            },
+            {
+              "setskillproficiency": {
+                "persuasion": "true"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Bewitching Whisper",
+          "displayname": "Bewitching Whisper",
+          "previewtext": "You can cast Compulsion once per long rest using a Warlock spell slot. ",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "7"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Compulsion",
+                "spelllevel": "4"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Book of Ancient Secrets",
+          "displayname": "Book of Ancient Secrets",
+          "previewtext": "Choose 2 ritual spells from any spell list. They don't count against your spell number and you can cast them as rituals. You can now also cast Warlock spells you know as rituals if they are eligible.\n You can add new ritual spells you find if their spell level is half your Warlock level rounded up. It take 2 hours and 50 gp per spell level.",
+          "prerequisites": [
+            {
+              "classfeature": "Pact of the Tome"
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Chains of Carceri",
+          "displayname": "Chains of Cerceri",
+          "previewtext": "You can cost Hold Monster at wil against celestials, fiends, or elementals. You must take a long rest before casting it on the same creature again.",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "15"
+                  }
+                },
+                { "classfeature": "Pact of the Chain"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Hold Monster",
+                "spelllevel": "5"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Devil's Sight",
+          "displayname": "Devil's Sight",
+          "previewtext": "You can see in both magical and nonmagical darkness up to 120 ft.",
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Dreadful Word",
+          "displayname": "Dreadful Word",
+          "previewtext": "You can cast Confusion once per long rest using a Warlock spell slot.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "7"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Confusion",
+                "spelllevel": "4"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Eldritch Sight",
+          "displayname": "Eldrith Sight",
+          "previewtext": "You can cast Detect Magic at will.",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Detect Magic",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Eldritch Spear",
+          "displayname": "Eldritch Spear",
+          "previewtext": "The range on Eldritch Blast is now 300 ft."
+        },
+        {
+          "name": "Eyes of the Rune Keeper",
+          "displayname": "Eyes of the Rune Keeper",
+          "previewtext": "You can read all writing."
+        },
+        {
+          "name": "Fiendish Vigor",
+          "displayname": "Fiendish Vigor",
+          "previewtext": "You can cast False Life on yourself at will as a 1st level spell.",
+          "effects": [
+            {
+              "addspell": {
+                "name": "False Life",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Gaze of Two Minds",
+          "displayname": "Gaze of Two Minds",
+          "previewtext": "As an action, touch a humanoid to perceive through its senses until the end of your next turn. You can use an action on each turn after to maintain it. You are blind and deaf to your own senses during it."
+        },
+        {
+          "name": "Lifedrinker",
+          "displayname": "Lifedrinker",
+          "previewtext": "When you hit a creature with your pact weapon, they take extra necrotic damage equal to your Cha mod (minimum 1).",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "12"
+                  }
+                },
+                {"classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Mask of Many Faces",
+          "displayname": "Mask of Many Faces",
+          "previewtext": "You can cast Disguise Self at will.",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Disguise",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Master of Myriad Forms",
+          "displayname": "Master of Myriad Forms",
+          "previewtext": "You can cast Alter Self at will.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "15"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Alter Self",
+                "spelllevel": "2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Minions of Chaos",
+          "displayname": "Minions of Chaos",
+          "previewtext": "You can cast Conjure Elemental once per long rest using a Warlock spell slot.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "9"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Conjure Elemental",
+                "spelllevel": "5"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Mire the Mind",
+          "displayname": "Mire the Mind",
+          "previewtext": "You can cast Slow once per long rest using a Warlock spell slot.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "5"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Slow",
+                "spelllevel": "3"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Misty Visions",
+          "displayname": "Misty Visions",
+          "previewtext": "You can cast Silent Image at will.",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Silent Image",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "One With Shadows",
+          "displayname": "One With Shadows",
+          "previewtext": "When you are in dim light or darkness, you can use your action to become invisible. This lasts until you move or take an action or reaction."
+        },
+        {
+          "name": "Otherworldly Leap",
+          "displayname": "Otherworldly Leap",
+          "previewtext": "You can cast Jump on yourself at will.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "9"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Jump",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Repelling Blast",
+          "displayname": "Repelling BLast",
+          "previewtext": "When you hit a creature with Eldritch Blast, you can push them back 10 ft."
+        },
+        {
+          "name": "Sculpter of Flesh",
+          "displayname": "Sculpter of Flesh",
+          "previewtext": "You can cast Polymorph once per long rest using a Warlock spell slot.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "7"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Polymorph",
+                "spelllevel": "4"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sign of Ill Omen",
+          "displayname": "Sign of Ill Omen",
+          "previewtext": "You can cast Bestow Curse once per long rest using a Warlock spell slot.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "5"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Bestow Curse",
+                "spelllevel": "3"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Thief of Five Fates",
+          "displayname": "Thief of Five Fates",
+          "previewtext": "You can cast Bane once per long rest using a Warlock spell slot.",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Bane",
+                "spelllevel": "1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Thirsting Blade",
+          "displayname": "Thirsting Blade",
+          "previewtext": "You can attack with your pact weapon twice, instead of once, when you take the Attack action on your turn.",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "5"
+                  }
+                  
+                },
+                {"classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Visions of Distant Realms",
+          "displayname": "Visions of Distant Realms",
+          "previewtext": "You can cast Arcane Eye at will.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "15"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Arcane Eye",
+                "spelllevel": "4"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Voice of the Chain Master",
+          "displayname": "Voice of the Chain Master",
+          "previewtext": "You can communicate telepathically with your familiar and perceive through their senses. Additionally, while doing so, you can speak using your voice through your familiar.",
+          "prerequisites": [
+            {
+              "classfeature": "Pact of the Chain"
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Whispers of the Grave",
+          "displayname": "Whispers of the Grave",
+          "previewtext": "You can cast Speak With Dead at will.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "9"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Speak With Dead",
+                "spelllevel": "3"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Witch Sight",
+          "displayname": "Witch Sight",
+          "previewtext": "You can see the true form of shapechangers or creatures masked by illusions if they are within 30 ft of you.",
+          "prerequisites": [
+            {
+              "greaterthanorequal": {
+                "first": {
+                  "classlevel": "Warlock"
+                },
+                "second": "15"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Aspect of the Moon",
+          "displayname": "Aspect of the Moon_UA",
+          "previewtext": "You no longer need to sleep and can't be forced to sleep. You still need to relax with light activity only for 8 hours to benefit from a long rest.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Archfey",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Burning Hex",
+          "displayname": "Burning Hex_UA",
+          "previewtext": "As a bonus action, deal fire damage to your Hexblade Cursed target equal to your Cha mod.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Hexblade",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Caiphon's Beacon",
+          "displayname": "Caiphon's Beacon_UA",
+          "previewtext": "You gain proficiency in Deception and Stealth (pick other skills if you already are proficient in one or both). You also have advantage on attack rolls against charmed creatures.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Great Old One",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Chilling Hex",
+          "displayname": "Chilling Hex_UA",
+          "previewtext": "As a bonus action, deal cold damage to all enemies within 5 feet of your Hexblade Cursed target. The damage is equal to your Cha mod.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Hexblade",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Chronicle of the Raven Queen",
+          "displayname": "Chronicle of the Raven Queen_UA",
+          "previewtext": "Place a corpse's hand or similar body part on your Book of Shadows and ask a question. After 1 minute, the answer appears written in blood in your book. It is provided by the creature's spirit to the best of its knowledge, in any language you choose. \n This ability must be used within 1 minute of the creature's death, and this ability only works on it for the one question.",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "archetype": {
+                    "name": "The Raven Queen",
+                    "class": "Warlock"
+                  }
+                 
+                },
+                { "classfeature": "Pact of the Tome"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Claw of Acamar",
+          "displayname": "Claw of Acamar_UA",
+          "previewtext": "You can create a tentacled flail with your Pact of the Blade feature. The weapon has the reach property. When you hit a creature with it, you can expend a spell slot to deal an extra 2d8 necrotic damage per slot level. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "archetype": {
+                    "name": "The Great Old One",
+                    "class": "Warlock"
+                  }
+                 
+                },
+                { "classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Cloak of Baalzebul",
+          "displayname": "Cloak of Baalzebul_UA",
+          "previewtext": "As a bonus action, you surround yourself with flies. You have advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Additionally, any creature that starts its turn within 5 ft. takes poison damage equal to your Charisma mod.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Fiend",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Curse Bringer",
+          "displayname": "Curse Bringer_UA",
+          "previewtext": "You can create a special greatsword with your Pact of the Blade feature. If you bring your Hexblade Cursed to 0 hp, you can immediately change the target to a different creature. The duration is not extended. \n When you hit a creature with this greatsword, you can expend a spell slot to deal an extra 2d8 slashing damage per spell level, and you can reduce the creature's speed to 0. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "archetype": {
+                    "name": "The Hexblade",
+                    "class": "Warlock"
+                  }
+                 
+                },
+                { "classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Kiss of Mephistopheles",
+          "displayname": "Kiss of Mephistopheles_UA",
+          "previewtext": "When you hit a creature with Eldritch Blast, you may use a bonus action and spend a Warlock spell slot to immediately cast Fireball, centered on the creature. ",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Fiend",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Frost Lance",
+          "displayname": "Frost Lance_UA",
+          "previewtext": "If you hit a creature with Eldritch Blast one or more times, you can reduce their speed by 10 ft. until the end of your next turn.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Archfey",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Gaze of Khirad",
+          "displayname": "Gaze of Khirad_UA",
+          "previewtext": "As an action, you can see through solid objects within 30 ft until the end of the turn. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "7"
+                  }
+                },
+                {
+                "archetype": {
+                "name": "The Archfey",
+                "class": "The Great Old One"
+              }
+                }
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Grasp of Hadar",
+          "displayname": "Grasp of Hadar_UA",
+          "previewtext": "Once during your turn, when you hit a creature with Eldritch Blast, you can move them 10 ft closer to you.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Great Old One",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Green Lord's Gift",
+          "displayname": "Green Lord's Gift_UA",
+          "previewtext": "Whenever you regain hit points, treat any dice rolled to determine the amount of hp as their maximum. ",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Archfey",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Improved Pact Weapon",
+          "displayname": "Improved Pact Weapon_UA",
+          "previewtext": "Any weapon you create using Pact of the Blade is a +1 weapon. This does not affect a magic weapon you turned in to a pact weapon. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "5"
+                  }
+                 
+                },
+                { "classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Mace of Disaster",
+          "displayname": "Mace of Disaster_UA",
+          "previewtext": "When you create your pact weapon in to a mace, upon hitting a creatue with the mace, you can expend a spell slot ot deal 2d8 additional force damage per slot level. You can knock it prone if it is Huge or smaller. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "archetype": {
+                    "name": "The Fiend",
+                    "class": "Warlock"
+                  }
+                 
+                },
+                { "classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Moon Bow",
+          "displayname": "Moon Bow_UA",
+          "previewtext": "You can create a longbow with Pact of the Blade. It has advantage on attack rolls vs Lycanthropes. When you hit a creature with the bow, you can spend a spell slot to deal extra 2d8 radiant damage per slot level.",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "archetype": {
+                    "name": "The Archfey",
+                    "class": "Warlock"
+                  }
+                  
+                },
+                { "classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Path of the Seeker",
+          "displayname": "Path of the Seeker_UA",
+          "previewtext": "You ignore difficult terrain, have advantage to checks to escape a grapple, manacles, or ropes, and advantage on all saving throws against being paralyzed.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Seeker",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Raven Queen's Blessing",
+          "displayname": "Raven Queen's Blessing_UA",
+          "previewtext": "When you score a critical hit with Eldritch Blast, pick yourself or an ally you can see within 30 ft. The chosen creature can spend a Hit Die to regain hp equal to the roll + Con mod. ",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Raven Queen",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Relentless Hex",
+          "displayname": "Relentless Hex_UA",
+          "previewtext": "As a bonus action, you can teleport to a space within 5 ft. of your Hexblade Cursed target. You must be able to see them and be within 30 ft.",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "5"
+                  }
+                },
+                {"archetype": {
+                "name": "The Hexblade",
+                "class": "Warlock"
+              }}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Sea Twins' Gift",
+          "displayname": "Sea Twins' Gift_UA",
+          "previewtext": "You can breathe underwater and gain a swimming speed equal to your walking speed. You can also cast Water Breathing once per long rest using a Warlock spell slot.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Archfey",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true",
+          "effects": [
+            {
+              "addspell": {
+                "name": "Water Breathing",
+                "spelllevel": "3"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Seeker's Speech",
+          "displayname": "Seeker's Speech_UA",
+          "previewtext": "After each long rest, you can pick 2 languages, you gain proficiency with them until the next long rest. ",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Seeker",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Shroud of Ulban",
+          "displayname": "Shroud of Ulban_UA",
+          "previewtext": "As an action, you can turn invisible for 1 minute. If you attack, deal damage, or force a save,you become visible at the end of the turn. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "18"
+                  }
+                },
+                {
+                  "archetype": {
+                "name": "The Great Old One",
+                "class": "Warlock"
+              }
+                
+                }
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Superior Pact Weapon",
+          "displayname": "Superior Pact Weapon_UA",
+          "previewtext": "Any weapon you create using Pact of the Blade is a +2 weapon. This does not affect a magic weapon you turned in to a pact weapon. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "9"
+                  }
+                },
+                { "classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Tomb of Levistus",
+          "displayname": "Tomb of Levistus_UA",
+          "previewtext": "As a reaction to damage, encase yourself in ice, which lasts until the end of your next turn. You gain 10 temporary hit points per Warlock level. The ice has vulnerability to fire damage, your speed is 0, and you're incapacitated while the ice persists. You may only do this once per short or long rest.",
+          "prerequisites": [
+            {
+              "archetype": {
+                "name": "The Fiend",
+                "class": "Warlock"
+              }
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        },
+        {
+          "name": "Ultimate Pact Weapon",
+          "displayname": "Ultimate Pact Weapon_UA",
+          "previewtext": "Any weapon you create using Pact of the Blade is a +3 weapon. This does not affect a magic weapon you turned in to a pact weapon. ",
+          "prerequisites": [
+            {
+              "and": [
+                {
+                  "greaterthanorequal": {
+                    "first": {
+                      "classlevel": "Warlock"
+                    },
+                    "second": "15"
+                  }
+                },
+                  {"classfeature": "Pact of the Blade"}
+              ]
+            }
+          ],
+          "hideifprerequisitesnotmet": "true"
+        }
+      ]
+    }
+  ],
+  "feats": [],
+  "weapons": []
+}
